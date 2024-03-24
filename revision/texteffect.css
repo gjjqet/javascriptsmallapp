@@ -1,0 +1,76 @@
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,.5));
+    color: #f4f4f4;
+}
+
+
+h1{
+    font-size: 40px;
+}
+
+.textani{
+    /* border-right: 2px solid gray; */
+    animation-name: bord;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bord {
+    from{
+       border: none;
+    }
+    to{
+       border-right: 2px solid gray;
+    }
+}
+
+.red{
+    color: red;
+}
+
+.skyblue{
+    color: skyblue;
+}
+
+.violet{
+    color: violet;
+}
+
+.yellow{
+    color: yellow;
+}
+
+
+em{
+    color: #f4f4f4;
+    font-style: unset;
+
+    animation-name: forem;
+    animation-duration: 0.8s;
+    animation-fill-mode: backwards;
+}
+
+
+
+@keyframes forem {
+    0%{
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+
+}
